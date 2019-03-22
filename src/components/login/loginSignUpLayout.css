@@ -1,0 +1,62 @@
+/* Login Folder : index.js */
+.loginParentComponent{
+    display: flex;
+}
+
+/* Login Folder : loginSignUpLeftLayout.js */
+
+.loginSignUpLeftLayout{
+    height: 100vh;
+    width: 70vw;
+    background-image: linear-gradient(to right bottom,#fd79a8d1, #0984e3c9), url(../../assets/images/loginleftLayout.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/* Login Folder : loginSignUpRightLayout.js */
+
+.loginSignUpRightLayout {
+    height: 100vh;
+    padding: 70px 50px;
+}
+
+.loginSignUpRightLayout h1 {
+    margin-bottom: 30px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom , #fd79a8d1, #0984e3c9);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 5px 10px 20px rgba(255,158,231,0.92)
+
+}
+
+.loginSignUp {
+
+}
+
+.loginSignUp__Group {
+
+}
+.loginSignUp__input {
+
+    font-size: 18px;
+    padding: 10px 10px;
+    font-family: inherit;
+    border-bottom :1px solid white;
+    border-radius: 5px;
+    /* background-color: white; */
+}
+
+.loginSignUp__input:focus {
+
+    outline: none;
+}
+
+.loginSignUp__label {
+
+}
