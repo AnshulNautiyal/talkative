@@ -1,12 +1,15 @@
 /* Login Folder : index.js */
 .loginParentComponent{
     display: flex;
+        margin: 30px;
+    box-shadow: 0px 0px 20px #00000029;
+        background-color: white;
 }
 
 /* Login Folder : loginSignUpLeftLayout.js */
 
 .loginSignUpLeftLayout{
-    height: 100vh;
+    height: 93vh;
     width: 70vw;
     background-image: linear-gradient(to right bottom,#fd79a8d1, #0984e3c9), url(../../assets/images/loginleftLayout.jpg);
     background-size: cover;
@@ -14,49 +17,195 @@
 }
 
 
+/* @media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: lightblue;
+  }
+} */
 
 /* Login Folder : loginSignUpRightLayout.js */
 
 .loginSignUpRightLayout {
-    height: 100vh;
+    width: 30vw;
     padding: 70px 50px;
 }
 
 .loginSignUpRightLayout h1 {
     margin-bottom: 30px;
     font-weight: 900;
+    font-size: 2em !important;
     letter-spacing: 1px;
     text-transform: uppercase;
     background-image: linear-gradient(to right bottom , #fd79a8d1, #0984e3c9);
     display: inline-block;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: 5px 10px 20px rgba(255,158,231,0.92)
+    text-shadow: 0px 6px 14px rgba(255, 158, 231, 0.25)
 
 }
 
-.loginSignUp {
-
+::-webkit-input-placeholder {
+    color:  #8080805a;
+    
 }
 
 .loginSignUp__Group {
-
+    margin-bottom: 20px;
 }
 .loginSignUp__input {
 
     font-size: 18px;
+    color: inherit;
+    font-weight: 700;
     padding: 10px 10px;
     font-family: inherit;
-    border-bottom :1px solid white;
-    border-radius: 5px;
+    border:none;
+    border-bottom :1px solid #8080804a;
+    border-radius: 2px;
     /* background-color: white; */
+    width: 100%;
+    
 }
 
 .loginSignUp__input:focus {
 
     outline: none;
+    border-bottom :3px inset #0dd2257a;
+    box-shadow: 0 6px 10px #00000014;
 }
 
-.loginSignUp__label {
+.loginSignUp__input:focus:invalid {
 
+    outline: none;
+    border-bottom :3px inset #f90808ad;
+    box-shadow: 0 6px 10px #00000014;
+}
+
+
+.loginSignUp__label {
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 8px;
+    margin-left:10px;
+    color:  #8080805a;
+    display: block;
+    transition: all .3s;
+}
+
+.loginSignUp__input:placeholder-shown + .loginSignUp__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+    
+}
+
+.btn {
+    outline:none;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    border-radius: 50px;
+    color: white;
+    
+    background-image: linear-gradient(to right bottom,#fd79a8d1, #0984e3c9);
+}
+.btn:hover {
+
+    transform: translateY(-3px);
+    box-shadow: 0 10px 10px #00000029;
+}
+.btn:active {
+
+    outline: none;
+    border: 1px solid;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px #00000029;
+}
+
+.signUpHelpText {
+        margin-top: 30px;
+        letter-spacing: 1px;
+        
+}
+.signUpHelpText span{
+        background-image: linear-gradient(to right bottom , #fd79a8d1, #0984e3c9);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+.signUpHelpText span:hover {
+    cursor: pointer;
+    transform: translateY(-4px);
+    text-shadow: 0px 10px 14px rgba(255, 158, 231, 0.25)
+}
+
+/* Error Message CSS */
+.has-margin-10 {
+        margin-top: 20px !important;
+}
+.errorMesgColor {
+    color: white;
+    font-size: 18px;
+    /* background-image: linear-gradient(to right bottom , #fd79a8d1, #0984e3c9); */
+    animation: topToBottom .4s;
+    /* transform: translateY(-30px); */
+}
+
+.errorMesg {
+    position: absolute !important;
+    top: 3%;
+    right: 8%;
+    box-shadow: 0px 0px 20px #00000029;
+    padding: 15px 20px !important;
+}
+
+@keyframes topToBottom {
+
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (max-width: 900px) {
+  .loginSignUpLeftLayout{
+    
+        width: 60vw;
+    }
+    .loginSignUpRightLayout {
+        width: 40vw;
+        
+    }
+}
+@media only screen and (max-width: 700px) {
+  .loginSignUpLeftLayout{
+    
+        width: 40vw;
+    }
+    .loginSignUpRightLayout {
+        width: 60vw;
+        
+    }
+}
+@media only screen and (max-width: 500px) {
+  .loginSignUpLeftLayout{
+    
+        width: 0vw;
+    }
+    .loginSignUpRightLayout {
+        width: 100vw;
+        
+    }
 }

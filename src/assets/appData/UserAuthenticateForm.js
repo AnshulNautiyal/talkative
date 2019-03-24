@@ -5,15 +5,16 @@ const UserAuthenticateForm =  {
         id:Math.floor(Math.random()*1000000),
         labelName:'User Name',
         type:"text",
-        name:'username',
-        placholder:'User Name'
+        name:'loginUsername',
+        placeholder:'User Name'
         },
         {
             id:Math.floor(Math.random()*1000000),
             labelName:'Password',
             type:'password',
-            name:'password',
-            placholder:'Password'
+            name:'loginPassword',
+            placeholder:'Password',
+            length:5
         }
     ],
 
@@ -23,28 +24,29 @@ const UserAuthenticateForm =  {
             labelName:'Full Name',
             type:'text',
             name:'fullname',
-            placholder:'Full Name'
+            placeholder:'Full Name'
         },
         {
             id:Math.floor(Math.random()*100000),
             labelName:'Email',
             type:'email',
             name:'email',
-            placholder:'Email ID'
+            placeholder:'Email ID'
         },
         {
             id:Math.floor(Math.random()*100000),
             labelName:'User Name',
             type:'text',
-            name:'username',
-            placholder:'User Name'
+            name:'signUpUsername',
+            placeholder:'User Name'
         },
         {
             id:Math.floor(Math.random()*100000),
             labelName:'Password',
             type:'password',
-            name:'password',
-            placholder:'Password'
+            name:'signUpPassword',
+            placeholder:'Password',
+            length: 5
         }
     ]
 
